@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 body{
     margin: 0;
     padding: 0;
@@ -19,16 +17,30 @@ h1, p{
     transform: translate(-50%, -50%);
 }
 
-input{
-    width: 600px;
+.input-container {
+    position: relative;
+    width: 550px;
+    margin-bottom: 32px;
+}
+
+.input-container input {
+    width: 100%;
     height: 50px;
     border-radius: 50px;
-    margin-top: 32px;
-    color: white;
-    background-color: #006666;
+    color: rgb(255, 255, 255);
+    background-color: #549898;
     outline: none;
     font-size: 20px;
-    border-style: none;
+    border: none;
+    padding-left: 60px; /* Ajuste o espaçamento para acomodar o ícone */
+}
+
+.input-container svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(0, 0, 0);
 }
 
 button{    
@@ -38,12 +50,11 @@ button{
     width: 240px;
     height: 50px;
     border-radius: 50px;
-    border-style: none;
+    border: none;
     background-color: #2b0132;
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
     color: white;
-
 }
 
 button:hover{
@@ -54,9 +65,4 @@ button:hover{
 
 ::-webkit-input-placeholder {
     color: white;
- }
-
-
-
-
-
+}
