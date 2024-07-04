@@ -19,13 +19,6 @@ h1{
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4%;
-}
-
 .login{
     position: absolute;
     top: 50%;
