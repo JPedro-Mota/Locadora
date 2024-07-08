@@ -150,6 +150,7 @@ body.open-sidebar {
 
 .item-description-out{
     display: flex;
+    align-items: end;
     width: 0px;
     overflow: hidden;
 }
