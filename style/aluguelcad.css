@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+}
+
+img{
+    width: 160px;
+    height: 40px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container {
+    position: relative;
+    width: 550px;
+    margin-bottom: 32px;
+}
+
+.input-container input {
+    width: 500px;
+    height: 50px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: #549898;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    padding-left: 60px; /* Ajuste o espaçamento para acomodar o ícone */
+}
+
+.input-container svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(0, 0, 0);
+}
+
+button{    
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 240px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2b0132;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+button:hover{
+    transition: 1s;
+    background-color: rgb(25, 1, 28);
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}

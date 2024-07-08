@@ -111,8 +111,8 @@ body.open-sidebar {
 
 
 .logo{
-    margin-top: 10px;
-    margin-left: 10px;
+    position: absolute;
+    padding: 15px;
 }
 
 .logo img{
@@ -150,14 +150,14 @@ body.open-sidebar {
 
 .item-description-out{
     display: flex;
-    align-items: end;
     width: 0px;
     overflow: hidden;
 }
 
 .logout{
     display: flex;
-    margin-top: 8vh;
+    margin-top: 18vh;
+    
 }
 
 #sidebar.open-sidebar{
@@ -175,4 +175,98 @@ body.open-sidebar {
 #sidebar.open-sidebar .side_item a{
     justify-content: flex-start;
     gap: 14px;
+}
+/* Fim da navbar */
+/* Inicio da classe main */
+
+table{
+    display: flex;
+    width: 185vh;
+    height: 700px;
+    padding: 4vh;
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+    width: 100vh;
+    height: 40px;
+
+}
+
+#topo{
+    background-color: #220127;
+    color: white;
+    height: 40px;
+}
+
+#title-table{
+    position: relative;
+    display: flex;
+    margin-left: 3.8vh;
+    margin-top: 15vh;
+    font-size: 20px;
+    height: 0px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 60px;
+    }
+
+    body.open-sidebar {
+        padding-left: 190px;
+    }
+
+    .user {
+        margin-left: 150vh;
+    }
+
+    .open-sidebar .user {
+        margin-left: 135vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    #sidebar.open-sidebar {
+        width: 150px;
+    }
+
+    #open_btn {
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    #side_itens {
+        gap: 20px;
+        margin-left: 5px;
+        margin-top: 10vh;
+    }
+
+    .user {
+        
+    }
+
+    .open-sidebar .user {
+        margin-left: 105vh;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .logout {
+        margin-top: 10vh;
+    }
 }
