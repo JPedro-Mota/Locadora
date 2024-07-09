@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background-color: rgb(224, 222, 221);
+    background-color: rgb(255, 255, 255);
     display: flex;
     padding-left: 60px;
     transition: all .5s;
@@ -183,8 +183,7 @@ table{
     display: flex;
     width: 185vh;
     height: 700px;
-    padding: 4vh;
-    margin-top: 80px;
+    margin-left: 4vh;
     font-size: 12px;
 }
 
@@ -209,6 +208,46 @@ td{
     margin-top: 15vh;
     font-size: 20px;
     height: 0px;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    
+}
+
+.pesquisa input{
+    width: 165vh;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 15vh;
+    color: black;
+    background-color: #8CBABA;
+    font-size: 12px;
+    padding-left: 40px;
+    outline: none;
+}
+
+.criar{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.criar button{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #28CF3A;
+}
+
+.lupa{
+    background-image: url(../Midia/Group.svg);
+    background-repeat: no-repeat;
+    background-position: calc(1%);
 }
 
 
@@ -253,9 +292,7 @@ td{
         margin-top: 10vh;
     }
 
-    .user {
-        
-    }
+    
 
     .open-sidebar .user {
         margin-left: 105vh;

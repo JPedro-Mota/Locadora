@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
 }
 
 img{
@@ -51,7 +51,7 @@ a{
     outline: none;
     font-size: 20px;
     border: none;
-    padding-left: 60px; /* Ajuste o espaçamento para acomodar o ícone */
+    padding-left: 60px; 
 }
 
 .input-container svg {
