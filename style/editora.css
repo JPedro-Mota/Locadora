@@ -114,6 +114,7 @@ body.open-sidebar {
 .logo img{
    width: 150px;
    height: 40px;
+
 }
 
 .open-sidebar .logo{
@@ -124,7 +125,7 @@ body.open-sidebar {
 
 
 .open-sidebar .user{
-    margin-left: 165vh;
+    
 }
 
 .item-description{
@@ -159,7 +160,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-left: 60px; /* added padding for responsiveness */
-    
   }
   
   header .container {
@@ -170,7 +170,8 @@ header {
   }
   
   header .logo {
-    margin-right: 20px; /* added margin for responsiveness */
+    margin-right: 20px;
+    margin-left: 10px; /* added margin for responsiveness */
   }
 
   header .user{
@@ -194,106 +195,67 @@ header {
     justify-content: flex-start;
     gap: 14px;
 }
-
-
-#sidebar.open-sidebar{
- min-width: 190px;
-}
-
-#sidebar.open-sidebar .item-description{
-    width: 150px;
-}
-
-#sidebar.open-sidebar .item-description-out{
-    width: 150px;
-}
-
-#sidebar.open-sidebar .side_item a{
-    justify-content: flex-start;
-    gap: 14px;
-}
 /* Fim da navbar */
 /* Inicio da classe main */
 
 main{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: ;
-    max-width: 100vw;
+    justify-content: start;
+    flex-direction: column;
+    transition: all .5s;
+    padding-top: 60px;
+  
 }
 
-.tabela{
-    
+main .open-sidebar{
+  transition: all .5s;
 }
 
-table{
-    
-   
-   
-    margin-left: 4vh;
-    font-size: 12px;
-}
-
-td{
-    border: 1px solid black;
-    padding: 5px;
-    width: 100vh;
-    height: 40px;
+main .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
-#topo{
-    background-color: #220127;
-    color: white;
-    height: 40px;
+.title-tb{
+  width: 1000px;
+  display: flex;
+  justify-content: start;
+  margin-top: 3%;
+  font-size: 20px;
 }
 
-#title-table{
-    position: relative;
-    display: flex;
-    margin-left: 3.8vh;
-    margin-top: 15vh;
-    font-size: 20px;
-    
+.title-table{
+  position: absolute;
+
 }
+
 
 .topo-tb{
-    position: relative;
-    justify-content: center;
-    display: flex;   
-    margin-top: 5vh;
-    margin-bottom: 1%;
-    gap: 10px;
-    
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.container{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 1200px;
+  padding: 10px;
+  
 }
 
 .pesquisa{
-   width: 100%;
-   
-}
-
-.pesquisa input{
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 50px;
-    margin-right: 15vh;
-    color: black;
-    background-color: #8CBABA;
-    font-size: 12px;
-    padding-left: 40px;
-    outline: none;
-}
-
-
-.criar button{
-    width: 100px;
-    height: 30px;
-    border-radius: 50px;
-    border: none;
-    background-color: #28CF3A;
-
+  width: 100%;
+  max-width: 1000px;
+  
 }
 
 .lupa{
@@ -302,60 +264,97 @@ td{
     background-position: calc(1%);
 }
 
-
-
-
-@media (max-width: 768px) {
-    body {
-        padding-left: 60px;
-    }
-
-    body.open-sidebar {
-        padding-left: 190px;
-    }
-
-    .user {
-        margin-left: 150vh;
-    }
-
-    .open-sidebar .user {
-        margin-left: 135vh;
-    }
+#pesq-al{
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding-left: 40px;
+  border-radius: 50px;
+  outline: none;
+  background-color: #8CBABA;
 }
 
-@media (max-width: 480px) {
-    #sidebar {
-        width: 50px;
-        min-width: 50px;
-    }
+.button-criar{
+  border: none;
+  background-color: #28CF3A;
+  border-radius: 50px;
+  width: 90px;
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
 
-    #sidebar.open-sidebar {
-        width: 150px;
-    }
+.button-criar:hover{
+  background-color: #20902c;
+  transition: all .3s;
+}
 
-    #open_btn {
-        margin-left: 5px;
-        margin-top: 5px;
-    }
+table{
+  width: 100%;
+  max-width: 1000px;
+  font-size: 12px;
+  border: none;
+}
 
-    #side_itens {
-        gap: 20px;
-        margin-left: 5px;
-        margin-top: 10vh;
-    }
 
-    
+td{
+  border: none;
+  padding: 5px;
+  width: 300px;
+  height: 35px;
+  background-color: #D9D9D9;
+  text-align: center;
+}
 
-    .open-sidebar .user {
-        margin-left: 105vh;
-    }
+#actions{
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .logo img {
-        width: 120px;
-        height: 30px;
-    }
+#table-tr{
+  background-color: #220127;
+  color: white;
+  height: 35px;
+  border: none;
+}
 
-    .logout {
-        margin-top: 10vh;
-    }
+#topo
+@media only screen and (max-width: 768px) {
+  body.open-sidebar {
+      padding-left: 120px;
+  }
+  #sidebar {
+      width: 40px;
+  }
+  #sidebar.open-sidebar {
+      width: 120px;
+  }
+  .item-description,
+  .item-description-out {
+      width: 100px;
+  }
+  .open-sidebar .user {
+      margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body.open-sidebar {
+      padding-left: 90px;
+  }
+  #sidebar {
+      width: 30px;
+  }
+  #sidebar.open-sidebar {
+      width: 90px;
+  }
+  .item-description,
+  .item-description-out {
+      width: 80px;
+  }
+  .open-sidebar .user {
+      margin-left: 80px;
+  }
 }
