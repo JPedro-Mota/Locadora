@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cadastroAluguel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro de Aluguel</title>
+</head>
+<body>
+
+    <div class="formaluguel">
+        <form class="aluguel">
+            <img src="../Midia/altislab.png" alt="" id="altis">
+                <h1>Cadastro de aluguel</h1>
+                <div class="input-container">
+                    
+                    <input type="text" placeholder="Nome do usuário" id="aluguel-name" class="icon-name">
+                </div>
+                <div class="input-container">
+                    
+                    <input  type="text" placeholder="Data de devolução" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'" id="aluguel-date" class="icon-date">
+                </div>
+               
+               <a href="./cadastroAluguelSucess.html"><button type="button" id="continue-aluguel" >Continuar</button></a>
+
+                <div class="powerby">
+                    <p>Powered by</p>
+                    <img src="../Midia/WDA GROUP LOGO.png" alt="" id="wdalogo">
+                </div>
+        </form>
+
+        
+    </div>
+  
+    <script src="./js/aluguel.js"></script>
+</body>
+</html>

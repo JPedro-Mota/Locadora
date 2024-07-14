@@ -10,7 +10,7 @@ form{
     gap: 20px;
 }
 
-.formlogin{
+.formeditor{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ form{
     
 }
 
-.login{
+.editor{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,9 +43,25 @@ input{
     font-size: 20px;
 }
 
+
+
+
 ::-webkit-input-placeholder {
     color: white;
   }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0 30px #828283 inset !important;
+    box-shadow: 0 0 0 30px #828283 inset !important;
+    background-color: #828283 !important;
+    background-repeat: no-repeat !important;
+    background-position: 10px center !important;
+}
+
 
 .icon-name{
     background-image: url(../Midia/image\ 1.svg);
@@ -59,8 +75,14 @@ input{
     background-position: calc(2%);
 }
 
-.icon-password{
-    background-image: url(../Midia/image\ 3.svg);
+.icon-tel{
+    background-image: url(../Midia/Vector\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-site{
+    background-image: url(../Midia/language_24dp_000000_FILL0_wght300_GRAD0_opsz24.svg);
     background-repeat: no-repeat;
     background-position: calc(2%);
 }
@@ -69,19 +91,12 @@ h1{
     text-align: center;
 }
 
-#recover-password{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4%;
-    color: black;
-}
 
-#continue-login{
+#continue-editor{
     width: 250px;
     height: 50px;
     border: none;
-    background-color: #220127;
+    background-color: #2C3099;
     opacity: 0.9;
     border-radius: 50px;
     color: white;
@@ -90,7 +105,7 @@ h1{
     transition: all 0.1s;
 }
 
-#continue-login:hover{
+#continue-editor:hover{
     opacity: 1;
 }
 
@@ -106,26 +121,26 @@ h1{
 }
 
 @media (max-width: 768px) {
-    .login {
+    .editor {
         width: 80%;
     }
     input {
         width: 80%;
     }
-    #continue-login {
+    #continue-editor {
         width: 80%;
     }
 }
 
 /* Mobile and below */
 @media (max-width: 480px) {
-    .login {
+    .editor {
         width: 90%;
     }
     input {
         width: 90%;
     }
-    #continue-login {
+    #continue-editor {
         width: 90%;
     }
     #wdalogo {
@@ -135,13 +150,13 @@ h1{
 
 /* Extra small screens and below */
 @media (max-width: 320px) {
-    .login {
+    .editor {
         width: 95%;
     }
     input {
         width: 95%;
     }
-    #continue-login {
+    #continue-editor {
         width: 95%;
     }
     #wdalogo {

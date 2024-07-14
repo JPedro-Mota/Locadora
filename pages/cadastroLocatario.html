@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cadastroLocatario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro de Locatário</title>
+</head>
+<body>
+
+    <div class="formlogin">
+        <form class="cadastro">
+            <img src="../Midia/altislab.png" alt="" id="altis">
+                <h1>Cadastro de Usuário</h1>
+                <div class="input-container">
+                    
+                    <input type="text" placeholder="Nome do locatário" id="cadastro-name" class="icon-name">
+                </div>
+                <div class="input-container">
+                    
+                    <input type="email" placeholder="E-mail do locatário" id="cadastro-email" class="icon-email">
+                </div>
+                <div class="input-container">
+                    <input type="tel" placeholder="Telefone" id="cadastro-tel" class="icon-tel">
+                </div>
+                <div class="input-container">
+                    <div class="title-end">
+                        <p id="title-loc">Opcional</p> 
+                    </div>
+                    <input type="text" placeholder="CPF" id="cadastro-cpf" class="icon-cpf">
+                </div>
+                
+                <div class="title-end">
+                    <p id="title-loc">Endereço</p> 
+                </div>
+                <div class="input-container" id="input-duo">
+                    
+                        
+                        <select type="tel" placeholder="Telefone" id="cadastro-uf" class="icon-uf">
+                            <option  selected> UF</option>
+                            <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                        </select>  
+                      
+                    <input type="text" placeholder="Cidade" id="cadastro-city" class="icon-city">
+                </div>
+                <div class="input-container" id="input-duo">
+                    
+                    <input type="tel" placeholder="Telefone" id="cadastro-tel" class="icon-tel">
+                    <input type="text" placeholder="CPF" id="cadastro-cpf" class="icon-cpf">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Confirme a senha" id="cadastro-confirmpass" class="icon-confirm">
+                </div>
+                
+                <button  id="continue-cadastro" >Continuar</button>
+
+                <div class="powerby">
+                    <p>Powered by</p>
+                    <img src="../Midia/WDA GROUP LOGO.png" alt="" id="wdalogo">
+                </div>
+        </form>
+    </div>
+  
+    <script src="../js/cadastroUser.js"></script>
+</body>
+</html>

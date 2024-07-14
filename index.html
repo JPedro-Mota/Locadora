@@ -11,26 +11,35 @@
     <title>Login</title>
 </head>
 <body>
-    <img src="./Midia/altislab.png" alt="">
-    <br>
-<form class="login">
-        <h1>Login</h1>
-        <div class="input-container">
-            <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-240v-32q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v32q0 33-23.5 56.5T720-160H240q-33 0-56.5-23.5T160-240Z"/></svg>
-            <input type="text" placeholder="Nome do usuário">
-        </div>
-        <div class="input-container">
-            <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px"><path d="M166.78-140.78q-44.3 0-75.15-30.85-30.85-30.85-30.85-75.15v-466.44q0-44.3 30.85-75.15 30.85-30.85 75.15-30.85h626.44q44.3 0 75.15 30.85 30.85 30.85 30.85 75.15v466.44q0 44.3-30.85 75.15-30.85 30.85-75.15 30.85H166.78ZM480-425.52q7.26 0 14.46-2.07 7.19-2.06 13.89-6.19l265.48-169.65q8.56-5 13.97-14.2 5.42-9.19 5.42-20.46 0-23.39-20.68-35.93-20.67-12.54-42.63 1.28L480-513.22 230.09-672.74q-21.39-13.26-42.35-1.35-20.96 11.92-20.96 36 0 12.27 5.42 21.18 5.41 8.91 13.97 13.48l265.48 169.65q6.7 4.13 13.89 6.19 7.2 2.07 14.46 2.07Z"/></svg>
-            <input type="email" placeholder="E-mail do usuário">
-        </div>
-        <div class="input-container">
-            <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px"><path d="M280-360q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0 137.52q80.96 0 147.48-45.98 66.52-45.97 93.78-123.06h10.61l38.43 39q8.27 7.69 17.81 11.04 9.54 3.35 19.8 3.35 10.26 0 19.53-3.35 9.26-3.35 17.52-11.61L693-401.13l57 49.35q8.26 7.26 17.74 10.89 9.48 3.63 19.74 3.19 10.26-.43 19.3-4.21 9.05-3.79 16.87-12.05l83.22-89.43q7.83-8.26 11.17-17.52 3.35-9.26 3.35-19.52 0-10.27-3.56-19.59-3.57-9.33-11.39-17.15l-36.48-35.92q-7.7-7.69-17.18-11.54-9.48-3.85-20.3-3.85H520.7q-24.57-73.09-90.16-121.06-65.58-47.98-150.54-47.98-107.35 0-182.44 75.08Q22.48-587.35 22.48-480q0 106.78 75.37 182.15T280-222.48Z"/></svg>
-            <input type="password" placeholder="Senha">
-        </div>
-        <a href="./pages/recupera.html">Esqueceu a senha?</a>
-        <button>Continuar</button>
-</form>
-    
-    
+
+    <div class="formlogin">
+        <form class="login">
+            <img src="./Midia/altislab.png" alt="" id="altis">
+                <h1>Login</h1>
+                <div class="input-container">
+                    
+                    <input type="text" placeholder="Nome do usuário" id="login-name" class="icon-name">
+                </div>
+                <div class="input-container">
+                    
+                    <input type="email" placeholder="E-mail do usuário" id="login-email" class="icon-email">
+                </div>
+                <div class="input-container">
+                    
+                    <input type="password" placeholder="Senha" id="login-password" class="icon-password">
+                </div>
+                <a href="./pages/recupera.html" id="recover-password">Esqueceu a senha?</a>
+                <button type="submit" id="continue-login" onclick="logar(); return false">Continuar</button>
+
+                <div class="powerby">
+                    <p>Powered by</p>
+                    <img src="./Midia/WDA GROUP LOGO.png" alt="" id="wdalogo">
+                </div>
+        </form>
+
+        
+    </div>
+  
+    <script src="./js/login.js"></script>
 </body>
 </html>

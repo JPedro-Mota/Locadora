@@ -24,7 +24,7 @@ form{
     
 }
 
-.login{
+.cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +62,22 @@ input{
 .icon-password{
     background-image: url(../Midia/image\ 3.svg);
     background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-acess{
+    background-image: url(../Midia/image\ 6.svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-confirm{
+    background-image: url(../Midia/image\ 3.svg);
+    background-repeat: no-repeat;
     background-position: calc(2%);
 }
+
+
 
 h1{
     text-align: center;
@@ -77,11 +91,11 @@ h1{
     color: black;
 }
 
-#continue-login{
+#continue-cadastro{
     width: 250px;
     height: 50px;
     border: none;
-    background-color: #220127;
+    background-color: #58A1D8;
     opacity: 0.9;
     border-radius: 50px;
     color: white;
@@ -90,8 +104,8 @@ h1{
     transition: all 0.1s;
 }
 
-#continue-login:hover{
-    opacity: 1;
+#continue-cadastro:hover{
+    opacity: 5;
 }
 
 .powerby{
@@ -105,27 +119,50 @@ h1{
     width: 80px;
 }
 
+#input-duo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#cadastro-acess,
+#cadastro-password{
+    width: 50%;
+    
+
+}
+
+select{
+    border: none;
+    border-radius: 50px;
+    background-color: #828283;
+    padding-left: 40px;
+    font-size: 15px;
+    color: white;
+    outline: none;
+}
 @media (max-width: 768px) {
-    .login {
+    .cadastro {
         width: 80%;
     }
     input {
         width: 80%;
     }
-    #continue-login {
+    #continue-cadastro {
         width: 80%;
     }
 }
 
 /* Mobile and below */
 @media (max-width: 480px) {
-    .login {
+    .cadastro {
         width: 90%;
     }
     input {
         width: 90%;
     }
-    #continue-login {
+    #continue-cadastro {
         width: 90%;
     }
     #wdalogo {
@@ -135,7 +172,7 @@ h1{
 
 /* Extra small screens and below */
 @media (max-width: 320px) {
-    .login {
+    .cadastro {
         width: 95%;
     }
     input {

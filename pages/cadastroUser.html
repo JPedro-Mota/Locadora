@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cadastroUser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+    <div class="formlogin">
+        <form class="cadastro">
+            <img src="../Midia/altislab.png" alt="" id="altis">
+                <h1>Cadastro de Usuário</h1>
+                <div class="input-container">
+                    
+                    <input type="text" placeholder="Nome do usuário" id="cadastro-name" class="icon-name">
+                </div>
+                <div class="input-container">
+                    
+                    <input type="email" placeholder="E-mail do usuário" id="cadastro-email" class="icon-email">
+                </div>
+                <div class="input-container" id="input-duo">
+                    
+                    <input type="password" placeholder="Senha" id="cadastro-password" class="icon-password">
+                    <select name="acesslevel" id="cadastro-acess" class="icon-acess">
+                        <option  selected> Nível de usuário</option>
+                        <option value="leitor">Leitor</option>
+                        <option value="editor">Editor</option>
+                    </select>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" placeholder="Confirme a senha" id="cadastro-confirmpass" class="icon-confirm">
+                </div>
+                <a href="./pages/recupera.html" id="recover-password">Esqueceu a senha?</a>
+                <button type="submit" id="continue-cadastro" >Continuar</button>
+
+                <div class="powerby">
+                    <p>Powered by</p>
+                    <img src="../Midia/WDA GROUP LOGO.png" alt="" id="wdalogo">
+                </div>
+        </form>
+    </div>
+  
+    <script src="../js/cadastroUser.js"></script>
+</body>
+</html>

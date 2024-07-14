@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0;
     padding: 0;
@@ -6,8 +8,10 @@ body{
     background-color: #d9d9d9;
 }
 
+
 form{
-    gap: 20px;
+    gap: 10px;
+    
 }
 
 .formlogin{
@@ -24,7 +28,7 @@ form{
     
 }
 
-.login{
+.cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +37,7 @@ form{
 
 
 input{
-    width: 500px;
+    width: 600px;
     height: 50px;
     border: none;
     border-radius: 50px;
@@ -42,6 +46,7 @@ input{
     outline: none;
     font-size: 20px;
 }
+
 
 ::-webkit-input-placeholder {
     color: white;
@@ -59,29 +64,56 @@ input{
     background-position: calc(2%);
 }
 
-.icon-password{
+.icon-tel{
+    background-image: url(../Midia/Vector\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-acess{
+    background-image: url(../Midia/image\ 6.svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-confirm{
     background-image: url(../Midia/image\ 3.svg);
     background-repeat: no-repeat;
     background-position: calc(2%);
 }
 
+.icon-cpf{
+    background-image: url(../Midia/Vector\ \(4\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-uf{
+    background-image: url(../Midia/bandeira-eua\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(5%);
+}
+
+.icon-city{
+    background-image: url(../Midia/construcao\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+
+
+
 h1{
     text-align: center;
 }
 
-#recover-password{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4%;
-    color: black;
-}
 
-#continue-login{
+
+#continue-cadastro{
     width: 250px;
     height: 50px;
     border: none;
-    background-color: #220127;
+    background-color: #26AA5F;
     opacity: 0.9;
     border-radius: 50px;
     color: white;
@@ -90,8 +122,14 @@ h1{
     transition: all 0.1s;
 }
 
-#continue-login:hover{
-    opacity: 1;
+.title-end{
+   width: 50%;
+   height: 3vh;
+}
+
+
+#continue-cadastro:hover{
+    opacity: 5;
 }
 
 .powerby{
@@ -105,27 +143,53 @@ h1{
     width: 80px;
 }
 
+#input-duo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+
+#cadastro-cpf,
+#cadastro-tel{
+    
+
+}
+
+#cadastro-uf{
+    width: 20%;
+    border: none;
+    border-radius: 50px;
+    background-color: #828283;
+    padding-left: 40px;
+    color: white ;
+}
+
+#cadastro-city{
+    width: 80%;
+}
+
 @media (max-width: 768px) {
-    .login {
+    .cadastro {
         width: 80%;
     }
     input {
         width: 80%;
     }
-    #continue-login {
+    #continue-cadastro {
         width: 80%;
     }
 }
 
 /* Mobile and below */
 @media (max-width: 480px) {
-    .login {
+    .cadastro {
         width: 90%;
     }
     input {
         width: 90%;
     }
-    #continue-login {
+    #continue-cadastro {
         width: 90%;
     }
     #wdalogo {
@@ -135,7 +199,7 @@ h1{
 
 /* Extra small screens and below */
 @media (max-width: 320px) {
-    .login {
+    .cadastro {
         width: 95%;
     }
     input {
