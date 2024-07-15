@@ -103,7 +103,6 @@
     margin-left: 0;
   }
   
-  .open-sidebar .user {}
   
   .item-description {
     display: flex;
@@ -311,7 +310,7 @@
     background-color: #D9D9D9;
     border-radius: 10px;
     width: 550px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,118 +418,176 @@
    #modal-edit{
     background-color: #D9D9D9;
     border-radius: 10px;
-    width: 570px;
-    height: 350px;
+    width: 600px;
+    height: 500px;
     display: flex;
     padding-top: 2%;
     flex-direction: column;
     align-items: center;
     justify-content: start;
    }
+
+   .cadastro {
+    gap: 10px;
+   }
   
-  .edit-modal{
+   .formlogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#altis{
+    width: 160px;
+    height: 40px;
+    
+}
+
+.cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    width: 100%;
-   gap: 14px;
-  }
-  
-  .name-edit{
-    width: 100%;
-  }
-  
-   #input-name{
-    border-radius: 50px;
-    width: 100%;
-    padding: 7px;
+    justify-content: center;
+}
+
+
+.formlogin input{
+    width: 400px;
+    height: 30px;
     border: none;
-    padding-left: 36px;
+    border-radius: 50px;
+    padding-left: 40px;
     background-color: #828283;
     outline: none;
-   }
-  
-   .email-edit{
-    width: 100%;
-   }
-  
-   #input-email{
-    border-radius: 50px;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    padding-left: 36px;
-    background-color: #828283;
-    outline: none;
-   }
-  
-  .tel-edit{
-    width: 100%;
+    font-size: 12px;
+}
+
+#input-duo{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 400px;
+}
+
+#cadastro-uf{
+  width: 20%;
+  border: none;
+  border-radius: 50px;
+  background-color: #828283;
+  padding-left: 40px;
+  color: white ;
+}
+
+#cadastro-city{
+  width: 80%;
+}
+
+
+
+
+::-webkit-input-placeholder {
+    color: white;
   }
-  
-  #input-tel{
-    border-radius: 50px;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    padding-left: 36px;
-    background-color: #828283;
-    outline: none;
-   }
-  
-   .site-edit{
-    width: 100%;
-  }
-  
-  #optional-edit{
-    font-size: 15px;
-    padding-top: 0;
-  }
-  
-  #input-site{
-    border-radius: 50px;
-    width: 100%;
-    padding: 7px;
-    border: none;
-    padding-left: 36px;
-    background-color: #828283;
-    outline: none;
-  }
+
+.icon-name{
+    background-image: url(../Midia/image\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%); 
+}
+
+.icon-email{
+    background-image: url(../Midia/image\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-tel{
+    background-image: url(../Midia/Vector\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(1%);
+}
+
+.icon-acess{
+    background-image: url(../Midia/image\ 6.svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-confirm{
+    background-image: url(../Midia/image\ 3.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-cpf{
+    background-image: url(../Midia/Vector\ \(4\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-uf{
+    background-image: url(../Midia/bandeira-eua\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(5%);
+}
+
+.icon-city{
+    background-image: url(../Midia/construcao\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-logra{
+    background-image: url(../Midia/Vector\ \(5\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-bairro{
+    background-image: url(../Midia/image\ 10.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-num{
+    background-image: url(../Midia/image\ 11.svg);
+    background-repeat: no-repeat;
+    background-position: calc(1%);
+}
   
    
    ::-webkit-input-placeholder {
     color: white;
   }
   
-   .icon-name{
-    background-image: url(../Midia/image\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: calc(1%);
-    
-   }
   
-  .icon-email{
-    background-image: url(../Midia/image\ 2.svg);
-    background-repeat: no-repeat;
-    background-position: calc(1%);
+  
+  
+  #cadastro-uf{
+    width: 20%;
+    border: none;
+    border-radius: 50px;
+    background-color: #828283;
+    padding-left: 40px;
+    color: white ;
+}
+
+#cadastro-city{
+    width: 80%;
+}
+
+#cadastro-logra{
+  width: 50%;
+}
+
+
+  
+  #buttons-edit{
+    gap: 10px;
+    margin-bottom: 15px;
   }
-  
-  .icon-tel{
-    background-image: url(../Midia/Vector\ \(3\).svg);
-    background-repeat: no-repeat;
-    background-position: calc(1%);
-    
-  }
-  
-  .icon-site{
-    background-image: url(../Midia/language_24dp_000000_FILL0_wght300_GRAD0_opsz24.svg);
-    background-repeat: no-repeat;
-    background-position: calc(1%);
-  }
-  
-  
-  
   
   #save-edit{
     background-color: #20902c;
