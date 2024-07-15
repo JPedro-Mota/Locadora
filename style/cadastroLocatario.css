@@ -5,7 +5,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: #d9d9d9;
+    background-color: #ffffff;
 }
 
 
@@ -38,7 +38,7 @@ form{
 
 input{
     width: 600px;
-    height: 50px;
+    height: 40px;
     border: none;
     border-radius: 50px;
     padding-left: 40px;
@@ -67,7 +67,7 @@ input{
 .icon-tel{
     background-image: url(../Midia/Vector\ \(3\).svg);
     background-repeat: no-repeat;
-    background-position: calc(3%);
+    background-position: calc(1%);
 }
 
 .icon-acess{
@@ -100,6 +100,23 @@ input{
     background-position: calc(2%);
 }
 
+.icon-logra{
+    background-image: url(../Midia/Vector\ \(5\).svg);
+    background-repeat: no-repeat;
+    background-position: calc(3%);
+}
+
+.icon-bairro{
+    background-image: url(../Midia/image\ 10.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+}
+
+.icon-num{
+    background-image: url(../Midia/image\ 11.svg);
+    background-repeat: no-repeat;
+    background-position: calc(1%);
+}
 
 
 
