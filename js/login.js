@@ -4,7 +4,7 @@ function logar(){
     var password = document.getElementById("login-password").value;
 
     if(name == "admin" && password == "12345678" && email == "admin@gmail.com"){
-        location.href = "../pages/dashboard.html";
+        window.location.href = "./pages/dashboard.html";
     }
     else{
         alert('Usuario ou senha incorretos');
