@@ -3,7 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: #d9d9d9;
+    background-color: white;
 }
 
 form{
@@ -48,31 +48,32 @@ input{
   }
 
 .icon-name{
-    background-image: url(../Midia/image\ 1.svg);
+    background-image: url(../Midia/book_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg);
     background-repeat: no-repeat;
     background-position: calc(2%); 
 }
 
-.icon-email{
-    background-image: url(../Midia/image\ 2.svg);
+.icon-autor{
+    background-image: url(../Midia/lapis\ 2\ copy.svg);
     background-repeat: no-repeat;
     background-position: calc(2%);
+  
 }
 
-.icon-password{
-    background-image: url(../Midia/image\ 3.svg);
+.icon-editora{
+    background-image: url(../Midia/caneta-do-usuario\ 1\ copy.svg);
     background-repeat: no-repeat;
     background-position: calc(3%);
 }
 
-.icon-acess{
-    background-image: url(../Midia/image\ 6.svg);
+.icon-estoque{
+    background-image: url(../Midia/image\ 16date.svg);
     background-repeat: no-repeat;
-    background-position: calc(3%);
+    background-position: calc(5%);
 }
 
 .icon-confirm{
-    background-image: url(../Midia/image\ 3.svg);
+    background-image: url(../Midia/image\ 17estoque.svg);
     background-repeat: no-repeat;
     background-position: calc(2%);
 }
@@ -95,7 +96,7 @@ h1{
     width: 250px;
     height: 50px;
     border: none;
-    background-color: #58A1D8;
+    background-color: #75CF97;
     opacity: 0.9;
     border-radius: 50px;
     color: white;
@@ -126,14 +127,10 @@ h1{
     width: 100%;
 }
 
-#cadastro-acess,
-#cadastro-password{
+
+
+#cadastro-estoque{
     width: 50%;
-    
-
-}
-
-select{
     border: none;
     border-radius: 50px;
     background-color: #828283;
@@ -142,6 +139,13 @@ select{
     color: white;
     outline: none;
 }
+
+#cadastro-editora{
+    width: 50%;
+
+}
+
+
 @media (max-width: 768px) {
     .cadastro {
         width: 80%;

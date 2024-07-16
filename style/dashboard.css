@@ -231,19 +231,39 @@
 
 .section-2{
     margin-top: 10px;
-    width: 90.6%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-3{
-    width: 100%;
+    width: 90.6%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid black;
 }
+
+.section-3{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-4{
+  width: 90.6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+}
+
+
+
+
 
   
   

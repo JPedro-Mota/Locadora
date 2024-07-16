@@ -3,41 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/cadastroUser.css">
+    <link rel="stylesheet" href="../style/cadastroLivro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Cadastro de Usuário</title>
+    <title>Cadastro de Livro</title>
 </head>
 <body>
 
     <div class="formlogin">
         <form class="cadastro">
             <img src="../Midia/altislab.png" alt="" id="altis">
-                <h1>Cadastro de Usuário</h1>
+                <h1>Cadastro de Livro</h1>
                 <div class="input-container">
                     
-                    <input type="text" placeholder="Nome do usuário" id="cadastro-name" class="icon-name">
+                    <input type="text" placeholder="Nome do livro" id="cadastro-name" class="icon-name">
                 </div>
                 <div class="input-container">
                     
-                    <input type="email" placeholder="E-mail do usuário" id="cadastro-email" class="icon-email">
+                    <input type="text" placeholder="Autor" id="cadastro-email" class="icon-autor">
                 </div>
                 <div class="input-container" id="input-duo">
                     
-                    <input type="password" placeholder="Senha" id="cadastro-password" class="icon-password">
-                    <select name="acesslevel" id="cadastro-acess" class="icon-acess">
-                        <option  selected> Nível de usuário</option>
-                        <option value="leitor">Leitor</option>
-                        <option value="editor">Editor</option>
-                    </select>
+                    <input type="text" placeholder="Editora" id="cadastro-editora" class="icon-editora">
+                    <input type="text" placeholder="Data de lançamento" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'" id="cadastro-estoque" class="icon-estoque">
+                        
                 </div>
 
                 <div class="input-container">
-                    <input type="password" placeholder="Confirme a senha" id="cadastro-confirmpass" class="icon-confirm">
+                    <input type="number" placeholder="Estoque" id="cadastro-confirmpass" class="icon-confirm">
                 </div>
-                <a href="../pages/cadastroUserSucess.html"><button type="button" id="continue-cadastro" >Continuar</button></a>
+                
+                <a href="../pages/cadastroLivroSucess.html"><button type="button" id="continue-cadastro" >Continuar</button></a>
 
                 <div class="powerby">
                     <p>Powered by</p>
