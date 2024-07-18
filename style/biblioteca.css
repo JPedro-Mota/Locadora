@@ -213,7 +213,7 @@
   .container {
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: space-evenly;
     width: 100%;
     padding: 10px;
   }
@@ -239,6 +239,10 @@
     background-color: #8CBABA;
   }
   
+  a{
+    text-decoration: none;
+  }
+  
   .button-criar {
     border: none;
     background-color: #28CF3A;
@@ -252,6 +256,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    color: white;
   }
   
   .button-criar:hover {
@@ -264,6 +269,7 @@
     max-width: 1000px;
     font-size: 12px;
     border: none;
+    margin-bottom: 1.5rem;
   }
   
   td {
@@ -294,6 +300,48 @@
     background-color: transparent;
     cursor: pointer;
   }
+
+  .paginacao{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+
+  .paginacao-item{
+    width: 34px;
+    height: 34px;
+    opacity: 0.9;
+    background-color: rgba(185, 178, 178, 0.76);
+    border: none;
+    box-shadow: 0px 3px 0px 0px #828283;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+  }
+
+  .paginacao-item:hover{
+    opacity: 45;
+  }
+
+
+
+.paginacao-item.active{
+  background-color: #220127;
+  color: white;
+}
+
+.paginacao-item.seta {
+  background-color: transparent;
+  border: none;
+}
+
+.paginacao-item.seta i {
+  color: #000; 
+}
+
+
   
   #fade-view {
     position: fixed;
@@ -311,7 +359,7 @@
     background-color: #D9D9D9;
     border-radius: 10px;
     width: 600px;
-    height: 350px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,10 +388,18 @@
     width: 100%;
     display: flex;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 30px;
   }
   
+.date-biblioteca{
+  width: 100px;
+}
+
+.estoque-biblioteca{
+  width: 100px;
+}
+
   .livro-aluguel{
     display: flex;
     flex-direction: column;
@@ -412,7 +468,7 @@
     background-color: #D9D9D9;
     border-radius: 10px;
     width: 570px;
-    height: 250px;
+    height: 350px;
     display: flex;
     padding-top: 2%;
     flex-direction: column;
@@ -457,13 +513,26 @@
     color: white;
   }
   
-   .icon-name{
-    background-image: url(../Midia/image\ 1.svg);
+   .icon-livro{
+    background-image: url(../Midia/book_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg);
     background-repeat: no-repeat;
     background-position: calc(1%);
     
    }
-  
+
+   .icon-edit{
+    background-image: url(../Midia/caneta-do-usuario\ 1\ copy.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+   }
+
+   
+  .icon-autor{
+    background-image: url(../Midia/lapis\ 2\ copy.svg);
+    background-repeat: no-repeat;
+    background-position: calc(2%);
+  }
+
   .icon-date{
     background-image: url(../Midia/image\ 18.svg);
     background-repeat: no-repeat;

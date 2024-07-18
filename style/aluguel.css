@@ -20,9 +20,8 @@
     top: 0;
     left: 0;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #220127;
-    height: 100vh;
+    height: 100%;
     min-width: 60px;
     transition: all 0.5s;
     z-index: 1;
@@ -33,6 +32,11 @@
   }
   
   #sidebar_content {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: space-between;
+    height: 100vh;
     padding: 10px;
   }
   
@@ -50,6 +54,8 @@
     width: 20px;
     height: 20px;
   }
+
+  
   
   #side_itens {
     display: flex;
@@ -103,7 +109,7 @@
     margin-left: 0;
   }
   
-  .open-sidebar .user {}
+
   
   .item-description {
     display: flex;
@@ -122,6 +128,8 @@
   
   .logout {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 18vh;
   }
   
@@ -238,6 +246,10 @@
     outline: none;
     background-color: #8CBABA;
   }
+
+  a{
+    text-decoration: none;
+  }
   
   .button-criar {
     border: none;
@@ -252,7 +264,9 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    color: white;
   }
+
   
   .button-criar:hover {
     background-color: #20902c;
@@ -280,6 +294,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   
   #table-tr {
@@ -597,76 +612,33 @@
   }
   
   
-  @media only screen and (max-width: 1200px) {
-    .container {
-        width: 1000px;
+  @media screen and (max-width: 798px) {
+    
+   body{
+    width: 100%;
+    overflow-x: auto;
+   }
+
+    .topo-tb{
+      width: 90%;
+      display: flex;
+      align-items: end;
+    }
+    
+
+
+    table {
+      width: 70%;
+      font-size: 10px;
+    }
+
+    td {
+      width: 25%;
+      height: 30px;
+    }
+  
+    .actions-bt {
+      width: 40px;
+      height: 30px;
     }
   }
-  
-  @media only screen and (max-width: 992px) {
-    .container {
-        width: 800px;
-    }
-  }
-  
-  @media only screen and (max-width: 768px) {
-    body.open-sidebar {
-        padding-left: 120px;
-    }
-  
-    #sidebar {
-        width: 40px;
-    }
-  
-    #sidebar.open-sidebar {
-        width: 120px;
-    }
-  
-    .item-description,
-    .item-description-out {
-        width: 100px;
-    }
-  
-    .open-sidebar .user {
-        margin-left: 100px;
-    }
-  
-    .container {
-        width: 600px;
-    }
-  }
-  
-  @media only screen and (max-width: 576px) {
-    body.open-sidebar {
-        padding-left: 90px;
-    }
-  
-    #sidebar {
-        width: 30px;
-    }
-  
-    #sidebar.open-sidebar {
-        width: 90px;
-    }
-  
-    .item-description,
-    .item-description-out {
-        width: 80px;
-    }
-  
-    .open-sidebar .user {
-        margin-left: 80px;
-    }
-  
-    .container {
-        width: 400px;
-    }
-  }
-  
-  @media only screen and (max-width: 360px) {
-    .container {
-        width: 300px;
-    }
-  }
-  
-  
