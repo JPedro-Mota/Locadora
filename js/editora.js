@@ -1,16 +1,19 @@
 let currentPage = 1;
-const totalPages = 3;
+const totalPages = 3; 
 
 const books = [
-    { name: 'Livro 1', editora: 'Editora A', autor: 'João da Silva', data: '12/12/2024' },
-    { name: 'Livro 2', editora: 'Editora B', autor: 'Maria de Souza', data: '01/01/2023' },
-    { name: 'Livro 3', editora: 'Editora C', autor: 'Pedro Pereira', data: '15/05/2022' },
-    { name: 'Livro 4', editora: 'Editora D', autor: 'Lucas Lima', data: '10/10/2021' },
-    { name: 'Livro 5', editora: 'Editora E', autor: 'Ana Silva', data: '20/09/2020' },
-    { name: 'Livro 6', editora: 'Editora F', autor: 'Carlos Alberto', data: '30/08/2019' },
-    { name: 'Livro 7', editora: 'Editora G', autor: 'Juliana Lima', data: '15/07/2018' },
-    { name: 'Livro 8', editora: 'Editora H', autor: 'Felipe Souza', data: '25/06/2017' },
-    { name: 'Livro 9', editora: 'Editora I', autor: 'Renata Santos', data: '05/05/2016' }
+    { name: 'Editora A', email: 'editora.a@example.com', tel: '(00) 1234-5678' },
+    { name: 'Editora B', email: 'editora.b@example.com', tel: '(00) 9876-5432' },
+    { name: 'Editora C', email: 'editora.c@example.com', tel: '(00) 4567-8901' },
+    { name: 'Editora D', email: 'editora.d@example.com', tel: '(00) 7890-1234' },
+    { name: 'Editora E', email: 'editora.e@example.com', tel: '(00) 2345-6789' },
+    { name: 'Editora F', email: 'editora.f@example.com', tel: '(00) 6789-0123' },
+    { name: 'Editora G', email: 'editora.g@example.com', tel: '(00) 3456-7890' },
+    { name: 'Editora H', email: 'editora.h@example.com', tel: '(00) 9012-3456' },
+    { name: 'Editora I', email: 'editora.i@example.com', tel: '(00) 4321-0987' },
+    { name: 'Editora J', email: 'editora.j@example.com', tel: '(00) 5678-1234' },
+    { name: 'Editora K', email: 'editora.k@example.com', tel: '(00) 8765-4321' },
+    { name: 'Editora L', email: 'editora.l@example.com', tel: '(00) 3456-1234' },
     
 ];
 
@@ -21,7 +24,7 @@ function changePage(page) {
 
     currentPage = page;
 
-    
+   
     const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = ''; 
 
@@ -32,9 +35,8 @@ function changePage(page) {
     currentBooks.forEach(book => {
         const row = `<tr>
             <td>${book.name}</td>
-            <td>${book.editora}</td>
-            <td>${book.autor}</td>
-            <td>${book.data}</td>
+            <td>${book.email}</td>
+            <td>${book.tel}</td>
             <td id="actions">
                 <button class="actions-bt exibir">
                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -1000 960 960" width="24px" fill="#666666">
@@ -64,7 +66,7 @@ function changePage(page) {
         tableBody.insertAdjacentHTML('beforeend', row);
     });
 
-    // Atualiza a aparência dos botões de paginação
+    
     const buttons = document.querySelectorAll('.paginacao-item');
     buttons.forEach(button => {
         button.classList.remove('active');
@@ -76,7 +78,7 @@ function changePage(page) {
         }
     });
 
-   
+    
     reassignModalEventListeners();
 }
 
@@ -96,7 +98,7 @@ document.querySelectorAll('.paginacao-item').forEach(button => {
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    changePage(currentPage); 
+    changePage(currentPage);
 });
 
 
